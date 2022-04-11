@@ -1,10 +1,11 @@
 # QUIZ api
  
-##Схема базы данных
+<h2>Схема базы данных</h2>
 <img width="729" alt="image" src="https://user-images.githubusercontent.com/69690237/162806727-13a33d3b-eb08-4c28-bb27-da35064ada44.png">
 
-##Роутинг
-### POST .../api/v1/account/token
+<h2>Роутинг</h2>
+
+- POST .../api/v1/account/token
 Роут для получения токена. В проекте используется JWT-токен
 Пример тела запроса:
 ```json
@@ -13,7 +14,7 @@
     "password": "5252"
 }
 ```
-### POST .../api/v1/account/register
+- POST .../api/v1/account/register
 Роут для регистрации пользователя.
 Пример тела запроса:
 ```json
@@ -24,7 +25,7 @@
 }
 ```
 
-### POST .../api/v1/lecture/start_studying и .../api/v1/lecture/finish_studying
+- POST .../api/v1/lecture/start_studying и .../api/v1/lecture/finish_studying
 Роут для начала начала/завершения изучения лекции
 Пример тела запроса:
 ```json
@@ -34,13 +35,13 @@
 }
 ```
 
-### GET .../api/v1/lecture/<pk>
+- GET .../api/v1/lecture/<pk>
 Роут для получения текста лекции. Возвращает текст лекции только в случае, если пользователь изучает именно эту лекцию
  
-### GET .../api/v1/study_program/
+- GET .../api/v1/study_program/
 Роут для получения программы обучения (всех этапов)
  
-### GET .../api/v1/quiz/<pk>
+- GET .../api/v1/quiz/<pk>
 Роут для получения теста с вопросами
 Пример ответа:
 ```json
@@ -66,7 +67,7 @@
 }
 ```
  
-### POST .../api/v1/quiz/<pk>
+- POST .../api/v1/quiz/<pk>
 Роут для отправки результата теста
 Пример тела запроса:
 ```json
