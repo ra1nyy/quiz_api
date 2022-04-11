@@ -18,4 +18,3 @@ class StudyProgressView(RetrieveModelMixin,
         if self.request.method == "PUT":
             return StudyProgressSendResultsSerializer
         return self.serializer_class
-
