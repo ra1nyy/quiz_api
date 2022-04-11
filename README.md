@@ -1,9 +1,9 @@
 # QUIZ api
  
-<h2>Схема базы данных</h2>
+##Схема базы данных
 <img width="729" alt="image" src="https://user-images.githubusercontent.com/69690237/162806727-13a33d3b-eb08-4c28-bb27-da35064ada44.png">
 
-<h2>Роутинг</h2>
+##Роутинг
 ### POST .../api/v1/account/token
 Роут для получения токена. В проекте используется JWT-токен
 Пример тела запроса:
