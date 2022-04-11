@@ -55,7 +55,7 @@ class QuizSaveResultsSerializer(serializers.ModelSerializer):
             elif question.type in ['one_answer', 'many_answers']:
                 if isinstance(answers_dict[question_id], list):
                     # TODO: переделать логику, тк не учитываются частично верные ответы
-                    if question.right_answers and question.right_answers.sort == answers_dict[question_id].sort():
+                    if question.right_answers and question.right_answers.sort() == answers_dict[question_id].sort():
                         right_answers += 1
                 else:
                     raise ResponseException('Answer have incorrect type!',
