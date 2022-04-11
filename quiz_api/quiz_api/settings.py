@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 load_dotenv(
-    dotenv_path='quiz_api/ra1n.env'
+    dotenv_path='../ra1n.env'
 )
 
 # Application definition
